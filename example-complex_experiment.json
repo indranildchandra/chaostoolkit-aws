@@ -7,7 +7,7 @@
         "availability": "high",
         "performance": "medium",
         "security": "none",
-		"reference": "https://docs.chaostoolkit.org/reference/api/experiment/"
+	"reference": "https://docs.chaostoolkit.org/reference/api/experiment/"
     },
     "tags": [
         "kubernetes",
