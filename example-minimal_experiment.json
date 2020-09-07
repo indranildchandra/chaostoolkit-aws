@@ -5,7 +5,7 @@
     "contributions": {
         "reliability": "high",
         "availability": "high",
-		"reference": "https://docs.chaostoolkit.org/reference/api/experiment/"
+	"reference": "https://docs.chaostoolkit.org/reference/api/experiment/"
     },
     "steady-state-hypothesis": {
         "title": "The file must be around first",
