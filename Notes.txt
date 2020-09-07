@@ -1,0 +1,22 @@
+Systemic weaknesses could take the form of: improper fallback settings when a service is unavailable; retry storms from improperly tuned timeouts; outages when a downstream dependency receives too much traffic; cascading failures when a single point of failure crashes; etc. 
+
+How to define experiments:
+1. Start by defining ‘steady state’ as some measurable output of a system that indicates normal behavior.
+2. Hypothesize that this steady state will continue in both the control group and the experimental group.
+3. Introduce variables that reflect real world events like servers that crash, hard drives that malfunction, network connections that are severed, etc.
+4. Try to disprove the hypothesis by looking for a difference in steady state between the control group and the experimental group.
+
+Where other practices address velocity and flexibility, Chaos specifically tackles systemic uncertainty in these distributed systems. The Principles of Chaos provide confidence to innovate quickly at massive scales and give customers the high quality experiences they deserve.
+
+Principles of Chaos Engineering:
+1. Build a Hypothesis around Steady State Behavior - focus on measurable output of a system, rather than internal attributes of the system. Measurements of that output over a short period of time constitute a proxy for the system’s steady state. The overall system’s throughput, error rates, latency percentiles, etc. could all be metrics of interest representing steady state behavior.
+2. Vary Real-world Events
+3. Run Experiments in Production
+4. Automate Experiments to Run Continuously
+5. Minimize Blast Radius
+
+References:
+- https://principlesofchaos.org/
+- https://docs.chaostoolkit.org/reference/api/experiment/
+- https://dzone.com/articles/chaos-engineering-simulate-az-failures-on-aws
+- https://github.com/x14gauravg/chaostoolkit-aws
